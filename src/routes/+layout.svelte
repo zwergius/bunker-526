@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
   import '../app.pcss';
   import LocationIcon from '$lib/components/icons/location.svelte';
   import InstagramIcon from '$lib/components/icons/instagram.svelte';
+  import HamburgerMenu from '$lib/components/hamburger-menu.svelte';
+  import Location from '$lib/components/icons/location.svelte';
 </script>
 
 <header>
   <a href="/">BUNKER526</a>
-  <nav>
+  <nav class="hide-mobile">
     <ul>
       <li><a href="/fest.pdf">Fest</a></li>
       <li><a href="#">Middag &amp; Fest</a></li>
@@ -15,39 +17,52 @@
       <li><a href="#">Lokaleleje</a></li>
     </ul>
   </nav>
+  <HamburgerMenu>
+    <ul>
+      <li><a href="/fest.pdf">Fest</a></li>
+      <li><a href="#">Middag &amp; Fest</a></li>
+      <li><a href="/polterabend.pdf">Polterabend</a></li>
+      <li><a href="#">Møder</a></li>
+      <li><a href="#">Lokaleleje</a></li>
+    </ul>
+  </HamburgerMenu>
 </header>
 
 <slot />
 
 <footer>
+  <div class="location">
+    <a class="map-link" href="https://maps.app.goo.gl/M77z7k2ahu2qEuUu9" rel="external">
+      <LocationIcon />
+      <span>Nørre Farimagsgade 6<span class="hide-mobile">, 1364 Kbh</span></span>
+    </a>
+    <span class="hide-mobile">&nbsp;~&nbsp;</span>
+    <span class="hide-mobile">CVR 40201645</span>
+  </div>
   <a href="https://github.com/zwergius/XP" rel="external">
     <InstagramIcon />
     IG
   </a>
-  <div class="location">
-    <a class="map-link" href="https://maps.app.goo.gl/M77z7k2ahu2qEuUu9" rel="external">
-      <LocationIcon />
-      <!-- <img src="/map.jpg" alt="Bunker location on a map" /> -->
-      <span>Nørre Farimagsgade 6, 1364 Kbh</span>
-    </a>
-    <span>&nbsp;~&nbsp;</span>
-    <span>CVR 40201645</span>
-  </div>
 </footer>
 
 <style>
   header,
   footer {
+    --paddingH: 1rem;
+    --paddingV: 2rem;
+    --font-size: 1.4rem;
+    --gap: 2em;
     background-color: rgb(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    align-items: center;
+    padding: var(--paddingH) var(--paddingV);
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
     font-family: Bebas Neue;
-    font-size: 1.4rem;
+    font-size: var(--font-size);
     color: white;
     stroke: white;
   }
@@ -72,7 +87,7 @@
 
   ul {
     display: flex;
-    gap: 32px;
+    gap: var(--gap);
   }
 
   .map-link {
@@ -84,5 +99,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    header,
+    footer {
+      --paddingV: 1rem;
+      --gap: 1em;
+    }
+    ul {
+      flex-direction: column;
+    }
+    .hide-mobile {
+      display: none;
+    }
   }
 </style>

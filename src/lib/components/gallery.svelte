@@ -36,7 +36,7 @@
               src="https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/{id}/w={width},fit=contain"
               alt="GG"
               loading="lazy"
-              height="auto"
+              height="300"
               {width}
               style="transform: rotate({multiplier * 5}deg)"
             />
@@ -58,6 +58,7 @@
     gap: var(--gap);
     overflow: hidden;
     padding: 50px;
+    height: 400px;
   }
 
   .gallery-content {
