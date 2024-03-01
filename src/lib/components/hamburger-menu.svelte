@@ -53,6 +53,7 @@
   }
 
   button {
+    display: none;
     z-index: 20;
     stroke: var(--grey3);
   }
@@ -75,5 +76,11 @@
 
   .open #bottom {
     transform: translate(-12px, 9px) rotate(-45deg);
+  }
+
+  @media (max-width: 576px) {
+    button {
+      display: block;
+    }
   }
 </style>

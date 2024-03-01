@@ -66,6 +66,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    height: 100svh;
   }
 
   section::before {
@@ -75,7 +76,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   section.one::before {
@@ -108,7 +109,7 @@
 
   .text-box {
     position: sticky;
-    top: 55%;
+    top: 690px;
     left: 5%;
     --color: rgb(254, 212, 139);
     --text-color: white;
@@ -123,7 +124,7 @@
     font-size: 6rem;
     font-family: Bebas Neue;
     position: fixed;
-    bottom: 43%;
+    top: 600px;
     left: 5%;
     z-index: 1;
     color: white;
@@ -131,6 +132,16 @@
 
   .frame {
     color: white;
+  }
+
+  @media (max-width: 1800px) {
+    h1 {
+      top: 200px;
+    }
+
+    .text-box {
+      top: 290px;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -142,10 +153,12 @@
   @media (max-width: 576px) {
     h1 {
       font-size: 4rem;
+      top: 200px;
     }
     .text-box {
       font-size: 1rem;
-      max-width: 200px;
+      max-width: 220px;
+      top: 260px;
     }
   }
 </style>
