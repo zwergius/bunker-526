@@ -3,7 +3,9 @@
   import LocationIcon from '$lib/components/icons/location.svelte';
   import InstagramIcon from '$lib/components/icons/instagram.svelte';
   import HamburgerMenu from '$lib/components/hamburger-menu.svelte';
-  import Location from '$lib/components/icons/location.svelte';
+
+  const mailto =
+    'mailto:info@bunker526.nu?subject=%F0%9F%93%86%20Booking%20foresp%C3%B8rgsel%20&body=Udfyld%20venligst%20nedenst%C3%A5ende%0D%0A%0D%0ADato%3A%0D%0A%0D%0AAnledning%3A%0D%0A%0D%0AAntal%20g%C3%A6ster%3A%0D%0A%0D%0ANavn%3A%20%0D%0A%0D%0ATelefon%20nummer%3A%0D%0A%0D%0AYderligere%20kommentarer%20%2F%20sp%C3%B8rgsm%C3%A5l%3A%0D%0A';
 </script>
 
 <header>
@@ -13,8 +15,10 @@
       <li><a href="/fest.pdf">Fest</a></li>
       <li><a href="#">Middag &amp; Fest</a></li>
       <li><a href="/polterabend.pdf">Polterabend</a></li>
+      <li><a href="/polterabend.pdf">Julefrokost</a></li>
       <li><a href="#">Møder</a></li>
       <li><a href="#">Lokaleleje</a></li>
+      <li><a class="button" href={mailto} type="button">Send forespørgsel &#10148;</a></li>
     </ul>
   </nav>
   <HamburgerMenu>
@@ -22,8 +26,10 @@
       <li><a href="/fest.pdf">Fest</a></li>
       <li><a href="#">Middag &amp; Fest</a></li>
       <li><a href="/polterabend.pdf">Polterabend</a></li>
+      <li><a href="/polterabend.pdf">Julefrokost</a></li>
       <li><a href="#">Møder</a></li>
       <li><a href="#">Lokaleleje</a></li>
+      <li><a class="button" href={mailto} type="button">Send forespørgsel &#10148;</a></li>
     </ul>
   </HamburgerMenu>
 </header>
@@ -48,7 +54,7 @@
 <style>
   header,
   footer {
-    --paddingH: 1rem;
+    --paddingH: 0.5rem;
     --paddingV: 2rem;
     --font-size: 1.4rem;
     --gap: 2em;
@@ -87,6 +93,7 @@
 
   ul {
     display: flex;
+    align-items: center;
     gap: var(--gap);
   }
 
@@ -101,6 +108,18 @@
     align-items: center;
   }
 
+  .button {
+    font-family: Bebas Neue;
+    font-size: 1.4rem;
+    display: flex;
+    align-content: center;
+    border-radius: 16px;
+    border: 1px solid white;
+    color: white;
+    line-height: var(--font-size);
+    padding: 0.3em 0.5em 0.2em;
+  }
+
   @media (max-width: 576px) {
     header,
     footer {
@@ -109,6 +128,7 @@
     }
     ul {
       flex-direction: column;
+      align-items: flex-start;
     }
     .hide-mobile {
       display: none;

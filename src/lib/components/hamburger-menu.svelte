@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.7);
     padding: var(--paddingH) var(--paddingV);
     padding-top: var(--padding-top);
   }
