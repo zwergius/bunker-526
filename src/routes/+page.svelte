@@ -9,8 +9,9 @@
   let scrollTargetOne: number;
   let scrollTargetTwo: number;
 
-  const title = 'Lej en Bunker i København C';
-  const description = 'Lej en Bunker i København C';
+  const title = 'Lej en Bunker i København K';
+  const description =
+    'Underjordiske oplevelser, events og private dinings I en ægte koldkrigsbunker fra 1970erne. Vi er et fuld service foretagende, der arrangerer og afvikler din aften i unikke omgivelser. Skriv til os og hør nærmere.';
 
   function getCoords(element: HTMLElement) {
     element.style.position = 'absolute';

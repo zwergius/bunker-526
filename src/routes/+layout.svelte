@@ -118,6 +118,20 @@
     color: white;
     line-height: var(--font-size);
     padding: 0.3em 0.5em 0.2em;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition-property: background-color, color;
+  }
+
+  @media (hover: hover) {
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button:hover {
+      text-decoration: unset;
+      background-color: white;
+      color: rgb(0, 0, 0, 0.8);
+    }
   }
 
   @media (max-width: 576px) {
