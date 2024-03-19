@@ -6,30 +6,45 @@
 
   const mailto =
     'mailto:info@bunker526.nu?subject=%F0%9F%93%86%20Booking%20foresp%C3%B8rgsel%20&body=Udfyld%20venligst%20nedenst%C3%A5ende%0D%0A%0D%0ADato%3A%0D%0A%0D%0AAnledning%3A%0D%0A%0D%0AAntal%20g%C3%A6ster%3A%0D%0A%0D%0ANavn%3A%20%0D%0A%0D%0ATelefon%20nummer%3A%0D%0A%0D%0AYderligere%20kommentarer%20%2F%20sp%C3%B8rgsm%C3%A5l%3A%0D%0A';
+  const fest = 'https://drive.google.com/file/d/1iOnA8bZh8s_QiIshmBaA7SeQS77nyNrd/view?usp=sharing';
+  const julefrokost =
+    'https://drive.google.com/file/d/1xsjrYr5TqImQzKdognzVoCSMFnCZVHZA/view?usp=sharing';
+  const lokaleleje =
+    'https://drive.google.com/file/d/13hWyqn83HCGQIQWroO5V2flOTbSAGUDz/view?usp=sharing';
+  const middagFest =
+    'https://drive.google.com/file/d/1OApQlZziUFRgnPuIg0v6Xc73ETeacw0d/view?usp=sharing';
+  const moeder =
+    'https://drive.google.com/file/d/13MsLHEOO6YYSdJRUAz5D8lUxhXe3RFtV/view?usp=sharing';
+  const polterabend =
+    'https://drive.google.com/file/d/1DsLI7Y03Cv-k-9fa1vo2MpjQKTFCcAzN/view?usp=sharing';
 </script>
 
 <header>
   <a href="/">BUNKER526</a>
   <nav class="hide-mobile">
     <ul>
-      <li><a href="/fest.pdf">Fest</a></li>
-      <li><a href="#">Middag &amp; Fest</a></li>
-      <li><a href="/polterabend.pdf">Polterabend</a></li>
-      <li><a href="/polterabend.pdf">Julefrokost</a></li>
-      <li><a href="#">Møder</a></li>
-      <li><a href="#">Lokaleleje</a></li>
-      <li><a class="button" href={mailto} type="button">Send forespørgsel &#10148;</a></li>
+      <li><a href={fest} rel="external" target="_blank">Fest</a></li>
+      <li><a href={middagFest} rel="external" target="_blank">Middag &amp; Fest</a></li>
+      <li><a href={polterabend} rel="external" target="_blank">Polterabend</a></li>
+      <li><a href={julefrokost} rel="external" target="_blank">Julefrokost</a></li>
+      <li><a href={moeder} rel="external" target="_blank">Møder</a></li>
+      <li><a href={lokaleleje} rel="external" target="_blank">Lokaleleje</a></li>
+      <li>
+        <a class="button" href={mailto} type="button" rel="external">Send forespørgsel &#10148;</a>
+      </li>
     </ul>
   </nav>
   <HamburgerMenu>
     <ul>
-      <li><a href="/fest.pdf">Fest</a></li>
-      <li><a href="#">Middag &amp; Fest</a></li>
-      <li><a href="/polterabend.pdf">Polterabend</a></li>
-      <li><a href="/polterabend.pdf">Julefrokost</a></li>
-      <li><a href="#">Møder</a></li>
-      <li><a href="#">Lokaleleje</a></li>
-      <li><a class="button" href={mailto} type="button">Send forespørgsel &#10148;</a></li>
+      <li><a href={fest} rel="external" target="_blank">Fest</a></li>
+      <li><a href={middagFest} rel="external" target="_blank">Middag &amp; Fest</a></li>
+      <li><a href={polterabend} rel="external" target="_blank">Polterabend</a></li>
+      <li><a href={julefrokost} rel="external" target="_blank">Julefrokost</a></li>
+      <li><a href={moeder} rel="external" target="_blank">Møder</a></li>
+      <li><a href={lokaleleje} rel="external" target="_blank">Lokaleleje</a></li>
+      <li>
+        <a class="button" href={mailto} type="button" rel="external">Send forespørgsel &#10148;</a>
+      </li>
     </ul>
   </HamburgerMenu>
 </header>
