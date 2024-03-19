@@ -60,7 +60,7 @@
     <span class="hide-mobile">&nbsp;~&nbsp;</span>
     <span class="hide-mobile">CVR 40201645</span>
   </div>
-  <a href="https://github.com/zwergius/XP" rel="external">
+  <a href="https://www.instagram.com/bunker526.nu/" rel="external">
     <InstagramIcon />
     IG
   </a>
