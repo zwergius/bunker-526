@@ -104,15 +104,15 @@
   }
 
   section.one::before {
-    background-image: url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/0d2a227f-a0c9-4aaa-3eba-6a2aae460b00/fullScreenMedium'); /* Fallback for browsers that do not support image-set */
+    background-image: url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/46f619f4-7a0c-4f84-6181-4b04d237b300/fullScreenMedium'); /* Fallback for browsers that do not support image-set */
     background-image: image-set(
-      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/0d2a227f-a0c9-4aaa-3eba-6a2aae460b00/fullScreenSmall')
+      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/46f619f4-7a0c-4f84-6181-4b04d237b300/fullScreenSmall')
         1x,
-      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/0d2a227f-a0c9-4aaa-3eba-6a2aae460b00/fullScreenMedium')
+      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/46f619f4-7a0c-4f84-6181-4b04d237b300/fullScreenMedium')
         1.5x,
-      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/0d2a227f-a0c9-4aaa-3eba-6a2aae460b00/fullScreenLarge')
+      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/46f619f4-7a0c-4f84-6181-4b04d237b300/fullScreenLarge')
         2x,
-      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/0d2a227f-a0c9-4aaa-3eba-6a2aae460b00/fullScreenXLarge')
+      url('https://imagedelivery.net/rOTc9tKCTQBc9ztkiBTX_w/46f619f4-7a0c-4f84-6181-4b04d237b300/fullScreenXLarge')
         3x
     );
   }
